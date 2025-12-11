@@ -1,10 +1,10 @@
 #include "../include/lib.h"
 #include "../include/translation.h"
 
-float E(int x)
+double E(int x)
 {
-    float res = 1.0;
-    long n_fact = 1;
+    double res = 1.0;
+    double n_fact = 1.0;
     for(int n=1; n <= x; n++)
         res += 1.0 / (n_fact *= n);
     return res;

@@ -4,10 +4,7 @@
 
 double E(int x)
 {
-    double res = 1.0;
-    for(int n=1; n <= x; n++)
-        res += pow((1 + 1.0/n), n);
-    return res;
+    return pow((1 + 1.0/x), x);
 }
 
 char* translation(long x)
