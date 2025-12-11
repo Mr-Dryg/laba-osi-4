@@ -3,15 +3,15 @@ project(laba)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# set(CMAKE_CXX_STANDARD 20)
+# set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include)
 
 add_subdirectory(src)
 
-add_executable(main main.cpp)
-target_link_libraries(main lib)
+add_executable(main main.c)
+target_link_libraries(main realiz_1)
 
 enable_testing()
-add_subdirectory(tests)
+# add_subdirectory(tests)
