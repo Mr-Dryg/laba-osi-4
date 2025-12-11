@@ -1,9 +1,13 @@
 #include "../include/lib.h"
 #include "../include/translation.h"
+#include <math.h>
 
-float E(int x)
+double E(int x)
 {
-    return (1 + 1/x) ^ x;
+    double res = 1.0;
+    for(int n=1; n <= x; n++)
+        res += pow((1 + 1.0/n), n);
+    return res;
 }
 
 char* translation(long x)
