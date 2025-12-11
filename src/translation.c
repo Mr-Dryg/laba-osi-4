@@ -36,13 +36,15 @@ char* _translation(long x, int base)
         }
         if (x)
         {
-            char* new_buf = realloc(res, cur_size * GROW_SIZE);
+            int new_size = cur_size * GROW_SIZE;
+            char* new_buf = realloc(res, new_size);
             if (new_buf == NULL)
             {
                 free(res);
                 return NULL;
             }
             res = new_buf;
+            cur_size = new_size;
         }
     }
     res[i] = '\0';
