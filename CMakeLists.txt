@@ -10,8 +10,11 @@ include_directories(include)
 
 add_subdirectory(src)
 
-add_executable(main main.c)
-target_link_libraries(main realiz_1)
+add_executable(prog1 prog_1.c)
+target_link_libraries(prog1 realiz_1)
+
+# add_executable(prog2 prog_2.c)
+# target_link_libraries(prog2 realiz_1 realiz_2)
 
 enable_testing()
 # add_subdirectory(tests)
