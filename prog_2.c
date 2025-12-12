@@ -51,7 +51,7 @@ int main()
     {
         if (res == switching)
         {
-            printf("switched\n");
+            printf("switch\n");
             switch_lib(lib);
         }
     }

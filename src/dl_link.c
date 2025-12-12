@@ -8,7 +8,7 @@
 
 int link_lib(DLibrary* lib, const char* filename)
 {
-    lib->handle = dlopen(filename, RTLD_LAZY);
+    lib->handle = dlopen(filename, RTLD_NOW);
     if (lib->handle == NULL)
     {
         fprintf(stderr, "dlopen error: %s\n", dlerror());
